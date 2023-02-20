@@ -23,11 +23,12 @@ public class saleOrder {
 
     private String branch;
     private String custCode;
-    @CreationTimestamp
-    @Column(updatable = false)
-    private LocalDateTime date;
+//    @CreationTimestamp
+//    @Column(updatable = false)
+    private LocalDate date;
     private String shift;
-    private int orderNo;
+
+    private Integer orderNo;
     private double disc;
     private double comm;
     private double amount;
@@ -47,5 +48,9 @@ public class saleOrder {
     private Date recDate;
     private String customerName;
     private String sourcedata;
+    //private double totAmount;
+    //rivate double totDisc;
+    //private double totNetAmount;
+
 
 }
